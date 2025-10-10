@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    background-color: rgb(243, 128, 128);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    background-color: red;
+    height: 300px;
+    width: 250px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 10px 20px 15px rgb(39, 38, 38);
+    border-radius: 10px;
+}
+
+
+.photo{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    background-image: url(./17.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.photo1{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    background-image: url(./17pro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+button{
+    padding :10px 20px;
+    border-radius: 40px;
+    cursor:pointer;
+}
+button:hover{
+    color: white;
+    background-color: black;
+}
+
+.card:hover{
+    transform: scale(1.2);
+}
+
+.photo:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+}
+.photo1:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+}
+body>h1{
+    width: inherit;
+    background-color:  rgb(243, 128, 128);
+    text-align: center;
+}

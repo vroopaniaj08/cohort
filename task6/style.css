@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+html .part1, body .part1 {
+  height: inherit;
+  flex-grow: 1;
+  background-image: url("./i1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+html .part2, body .part2 {
+  height: inherit;
+  flex-grow: 1;
+  background-image: url("./i2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+html .part3, body .part3 {
+  height: inherit;
+  flex-grow: 1;
+  background-image: url("./i3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+html .part4, body .part4 {
+  height: inherit;
+  flex-grow: 1;
+  background-image: url("./i2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+html .part5, body .part5 {
+  height: inherit;
+  flex-grow: 1;
+  background-image: url("./i1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+html div:nth-child(1):hover, body div:nth-child(1):hover {
+  flex-grow: 2;
+  transition: 1s ease;
+}
+html div:nth-child(2):hover, body div:nth-child(2):hover {
+  flex-grow: 2;
+  transition: 1s ease;
+}
+html div:nth-child(3):hover, body div:nth-child(3):hover {
+  flex-grow: 2;
+  transition: 1s ease;
+}
+html div:nth-child(4):hover, body div:nth-child(4):hover {
+  flex-grow: 2;
+  transition: 1s ease;
+}
+html div:nth-child(5):hover, body div:nth-child(5):hover {
+  flex-grow: 2;
+  transition: 1s ease;
+}/*# sourceMappingURL=style.css.map */

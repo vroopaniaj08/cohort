@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.ri-asterisk{
+    color: purple;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.nav{
+    height: 8vh;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.part1>i{
+    height: 30px;
+}
+
+.part2>a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: black;
+}
+.part3>a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: black;
+}
+.part3>span>a{
+    text-decoration: none;
+    color: white;
+}
+.part3>span{
+    padding: 10px;
+    background-color: rgb(38, 38, 38);
+    border-radius: 18px;
+}
+
+a>i{
+    height: 20px;
+    width: 20px;
+    padding:5px;
+    color: black;
+    background-color: rgb(47, 113, 171);
+    border-radius: 50%;
+}
+
+.content{
+    height: 92vh;
+    width: inherit;
+    display: flex;
+    padding: 20px;
+}
+
+.div1{
+
+    height: inherit;
+    width: 50%;
+}
+
+.div1>span>img{
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.text {
+    font-size: 120px;
+}
+
+.text > span {
+    font-size: 20px !important;
+    border: 2px solid black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 25px;
+    white-space: nowrap; /* prevent button text wrapping */
+}
+
+.text > span > i {
+    font-size: 1.5em;
+    margin-right: 6px;
+}
+
+.btn{
+    margin:20px;
+    margin-left:0 !important;
+    display: flex;
+    gap: 20px;
+}
+
+.btn>button{
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 10px;
+    gap: 10px;
+    font-size: 15px;
+    background-color: rgb(38, 38, 38);
+    color: white;
+    border-radius: 20px;
+}
+
+.btn>div{
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.btn>div>a{
+    color: black;
+}
+
+.footer{
+    margin-top: 60px;
+}
+
+.footer>p{
+    font-size:15px;
+    padding-right: 150px;
+}
+
+.footer>div>img{
+    width: 800px;
+}
+
+.div2{
+    height: inherit;
+    width: 50%;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+        "t t"
+        "bottom-left bottom-right";
+}
+
+.pa1{
+    background-color: #fff !important;
+    grid-area: t;
+    background-image: url(./igor-omilaev-cKndprbeuY8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;;
+}
+.pa2{
+    background-color: #fff !important;
+    grid-area: bottom-left;
+    background-image: url(./merrilee-schultz-4E-szxM3fkE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.pa3{
+    background-color: #fff !important;
+    border-radius: 20px;
+    grid-area: bottom-right;
+    background-image: url(./zh-haris-X1nseBa6DiI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}

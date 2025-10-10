@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: slow;
+}
+
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.nav a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.nav a:hover{
+    color: black;
+}
+
+.main{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./17.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.main h1{
+    font-size: 80px;
+    font-weight: 400;
+    margin-top: 60px;
+    color: white;
+}
+
+.main p{
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.left-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: black;
+}
+
+.left-btn-a{
+    background-color: blue !important;
+    border: 1px solid  blue;
+
+}
+
+.left-btn-b{
+    border: 1px solid  blue;
+}
+
+.left-btn a:hover{
+    background-color: blue;
+    color: white;
+}
+
+.main2{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./air.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.main2 h1{
+    font-size: 80px;
+    font-weight: 400;
+    color: black;
+    margin-top: 40px;
+}
+
+.main2 p{
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    margin: 10px 0px;
+}
+
+.left-btn-c{
+    color : blue !important;
+    background-color: white !important;
+    border:1px solid blue !important;
+}
+.left-btn-c:hover{
+    background-color: blue !important;
+    color: white !important;
+}
+
+.main3{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./17pro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom : 10px;
+}
+
+.main3 h1{
+    font-size: 80px;
+    font-weight: 400;
+    color: black;
+    margin-top: 40px;
+}
+
+.main3 p{
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    margin: 10px 0px;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main4{
+    width: 49%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./watch.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom : 10px;
+}
+
+.main5{
+    width: 49%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./air_p.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom : 10px;
+}
+
+.main4 h1{
+    font-size: 40px;
+    font-weight: 300;
+    color: black;
+    margin-top: 40px;
+}
+
+.main4 p{
+    font-size: 15px;
+    font-weight: 150;
+    color: black;
+    margin: 10px 0px;
+}
+.main5 h1{
+    font-size: 40px;
+    font-weight: 300;
+    color: black;
+    margin-top: 40px;
+}
+
+.main5 p{
+    font-size: 15px;
+    font-weight: 150;
+    color: black;
+    margin: 10px 0px;
+}
