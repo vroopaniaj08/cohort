@@ -161,7 +161,7 @@ a>i{
 .pa1{
     background-color: #fff !important;
     grid-area: t;
-    background-image: url(./igor-omilaev-cKndprbeuY8-unsplash.jpg);
+    background-image: url(./i1.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 20px;;
@@ -169,7 +169,7 @@ a>i{
 .pa2{
     background-color: #fff !important;
     grid-area: bottom-left;
-    background-image: url(./merrilee-schultz-4E-szxM3fkE-unsplash.jpg);
+    background-image: url(./i2.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -178,7 +178,7 @@ a>i{
     background-color: #fff !important;
     border-radius: 20px;
     grid-area: bottom-right;
-    background-image: url(./zh-haris-X1nseBa6DiI-unsplash.jpg);
+    background-image: url(./i3.jpg);
     background-size: cover;
     background-position: center;
 }
