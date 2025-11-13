@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+@mixin bg($bg-image,$name){
+    background-image: url($bg-image);
+    grid-area: $name;
+    background-size: cover;
+    background-position: center;
+    height: inherit;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 30% 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap : 20px;
+    grid-template-areas:
+                        "main top1 top1 top1"
+                        "main lb middle1 rb";
+    height: inherit;
+
+}
+
+.part1{
+    @include bg('./i1.jpg', main );
+}
+
+.part2{
+    @include bg('./i2.jpg', top1 );
+}
+
+.part3{
+    @include bg('./i3.jpg', lb );
+}
+
+.part4{
+    @include bg('./i1.jpg', middle1 );
+}
+
+.part5{
+    @include bg('./i2.jpg', rb );
+}

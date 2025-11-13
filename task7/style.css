@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 30% 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  grid-template-areas: "main top1 top1 top1" "main lb middle1 rb";
+  height: inherit;
+}
+
+.part1 {
+  background-image: url("./i1.jpg");
+  grid-area: main;
+  background-size: cover;
+  background-position: center;
+  height: inherit;
+}
+
+.part2 {
+  background-image: url("./i2.jpg");
+  grid-area: top1;
+  background-size: cover;
+  background-position: center;
+  height: inherit;
+}
+
+.part3 {
+  background-image: url("./i3.jpg");
+  grid-area: lb;
+  background-size: cover;
+  background-position: center;
+  height: inherit;
+}
+
+.part4 {
+  background-image: url("./i1.jpg");
+  grid-area: middle1;
+  background-size: cover;
+  background-position: center;
+  height: inherit;
+}
+
+.part5 {
+  background-image: url("./i2.jpg");
+  grid-area: rb;
+  background-size: cover;
+  background-position: center;
+  height: inherit;
+}/*# sourceMappingURL=style.css.map */
