@@ -275,6 +275,7 @@ main .view7 {
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
+  border-radius: 10px;
 }
 main .view7 .top {
   color: black !important;

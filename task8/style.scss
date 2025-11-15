@@ -263,6 +263,7 @@ main{
         background-color: rgb(255, 247, 0);
         @include fl(1rem);
         padding: 2rem;
+        border-radius: 10px;
         
         .top{
             color: black !important;
