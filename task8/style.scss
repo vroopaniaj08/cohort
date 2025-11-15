@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #1f1f1f;
+}
+
+@mixin fl($gap){
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: clamp(14px,1vw,18px);
+}
+
+main{
+    @include fl(1rem);
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    .view{
+        @include fl(1rem);
+        width: 100%;
+        max-width: 2000px;
+        .top{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        .bottom{
+            @include fl(3rem);
+            background-color: #333333;
+            border-radius: 10px;
+            padding: 1rem;
+
+            .bottom-content{
+                @include fl(0.7rem);
+
+                h1{
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+                p{
+                    font-weight: 100;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                    opacity: 0.6;
+                }
+            }
+        }
+
+    }
+
+    .view2{
+        @include fl(1rem);
+        width: 100%;
+        max-width: 2000px;
+        
+        .top, .bottom{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem 2rem;
+
+            .first,.second{
+                @include fl(0.2rem);
+                align-items: center;
+                p{
+                    font-size: 2.5rem;
+                }
+
+                small{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    .view3{
+        @include fl(1rem);
+        width: 100%;
+        max-width: 2000px;
+        .top{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        
+        .bottom>p{
+            text-transform: uppercase;
+        }
+        .bottom{
+            width: 100%;
+            @include fl(3rem);
+            background-color: #333333;
+            border-radius: 10px;
+            padding: 1rem;
+            
+            .bottom-content{
+                @include fl(0.7rem);
+                width: 100%;
+                
+                h1{
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+                .para{
+                    width: 100%;
+                    @include fl(1rem);
+                    p{
+                        font-weight: 100;
+                        font-size: 1rem;
+                        line-height: 1.5;
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+
+    .view4{
+        @include fl(1rem);
+        width: 100%;
+        max-width: 2000px;
+        .top{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        
+        .bottom>p{
+            text-transform: uppercase;
+        }
+        .bottom{
+            width: 100%;
+            @include fl(3rem);
+            background-color: #333333;
+            border-radius: 10px;
+            padding: 1rem;
+            
+
+            .bottom-content{
+                @include fl(0.7rem);
+                width: 100%;
+                
+                h1{
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+                .para{
+                    width: 100%;
+                    @include fl(1rem);
+                    p{
+                        font-weight: 100;
+                        font-size: 1rem;
+                        line-height: 1.5;
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+
+    .view5{
+        @include fl(1rem);
+        width: 100%;
+        max-width: 2000px;
+
+        .card{
+            @include fl(1rem);
+            border-radius: 10px ;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background-image: url('./img.png');
+            background-size: cover;
+            background-position: center;
+            aspect-ratio: 1/1;
+            .top{
+                display: flex;
+                gap: 0.7rem;
+                justify-content: flex-end;
+                padding: 0.7rem;
+
+                .icon{
+                    width: fit-content;
+                    padding: 0.5rem;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    background-color: #3e3e3e6d;
+                    backdrop-filter: blur(5px);
+                }
+            }
+            
+            .bottom{
+                backdrop-filter: blur(5px);
+                display: flex;
+                border-radius: 10px;
+                justify-content: space-between;
+                background-color: #3e3e3e6d;
+                padding: 0.7rem;
+            }
+        }
+    }
+
+    .view6{
+        @include fl(1rem);
+        width: 100%;
+        max-width: 2000px;
+        .top{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        
+        .bottom{
+            justify-content: space-between;
+            @include fl(3rem);
+            background-color: #333333;
+            border-radius: 10px;
+            padding: 1rem;
+
+            .bottom-content{
+                @include fl(0.7rem);
+
+                h1{
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+                p{
+                    font-weight: 100;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+
+    .view7{
+        width: 100%;
+        max-width: 2000px;
+        background-color: rgb(255, 247, 0);
+        @include fl(1rem);
+        padding: 2rem;
+        
+        .top{
+            color: black !important;
+            text-transform: uppercase;
+        }
+
+        .bottom{
+            button{
+                background-color: black;
+                border-radius: 0.7rem;
+                color: white;
+                padding: 0.7rem 1.2rem;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 945px) {
+    main{
+        .view{
+            flex-direction: row;
+            
+            .top,.bottom{
+                width: 50%;
+            }
+            
+            .bottom{
+                justify-content: space-between;
+                padding: 2rem;
+            }
+        }
+        
+        .view2{
+            flex-direction: row;
+            
+            .top,.bottom{
+                width: 50%;
+            }
+        }
+        .view3{
+            flex-direction: row-reverse;
+            
+            .top,.bottom{
+                width: 50%;
+            }
+            
+            .bottom{
+                justify-content: space-between;
+                padding: 2rem;
+                .bottom-content{
+                    .para{
+                        flex-direction: row;
+
+                        p{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        .view4{
+            flex-direction: row;
+            
+            .top,.bottom{
+                width: 50%;
+            }
+            
+            .bottom{
+                justify-content: space-between;
+                padding: 2rem;
+                .bottom-content{
+                    .para{
+                        flex-direction: row;
+
+                        p{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .view5{
+            flex-direction: row;
+            width: 100%;
+
+            .card{
+                width: 33%;
+            }
+        }
+
+        .view6{
+            flex-direction: row;
+            
+            .top,.bottom{
+                width: 50%;
+            }
+        }
+
+        .view7{
+            flex-direction: row;
+            .top{
+                width: 80%;
+                p{
+
+                    font-size: 3rem;
+                }
+            }
+            .bottom{
+                width: 20%;
+                @include fl(1rem);
+                justify-content: flex-end;
+                button{
+                    width: 100%;
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
+}
