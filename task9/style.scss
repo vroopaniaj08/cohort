@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.par1{
+    height: 20rem;
+    width: 20rem;
+    background-color: red;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    b{
+        font-size: 2rem;
+    }
+}
+
+.new1{
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+}
+@mixin btn(){
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+.par2{
+    @include btn();
+}
+.par3{
+    @include btn();
+}
